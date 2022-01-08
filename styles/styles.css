@@ -2052,6 +2052,99 @@ img {
   margin-bottom: 2rem !important;
 }
 
+#page-creative-tech .notion-text {
+    text-align: center !important;
+  }
+  @media (max-width: 767.98px) {
+    #page-creative-tech .notion-text {
+      text-align: left !important;
+    }
+  }
+  #page-creative-tech .notion-text p {
+    color: rgba(var(--contrast), 0.5) !important;
+    margin-bottom: 0 !important;
+  }
+  #page-creative-tech .notion-collection-gallery.large {
+    display: grid !important;
+    grid-column-gap: 2.5rem !important;
+    grid-row-gap: 2.5rem !important;
+    border-top: none !important;
+    margin-top: 2.75rem !important;
+    margin-bottom: 4rem !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 767.98px) {
+    #page-creative-tech .notion-collection-gallery.large {
+      margin-top: 2rem !important;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  #page-creative-tech .notion-collection-gallery.large .notion-collection-card {
+    box-shadow: none !important;
+    border-radius: 0.5rem !important;
+  }
+  #page-creative-tech .notion-collection-gallery.large .notion-collection-card img {
+    transform: scale(1) !important;
+    transition: all 0.5s ease-in-out !important;
+  }
+  #page-creative-tech .notion-collection-gallery.large .notion-collection-card:hover {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out !important;
+  }
+  #page-creative-tech .notion-collection-gallery.large .notion-collection-card:hover img {
+    transform: scale(1.5) !important;
+    opacity: 0.5 !important;
+  }
+  #page-creative-tech .notion-collection-gallery.large .notion-collection-card:hover .notion-property__title {
+    opacity: 1;
+    animation: fadeIn linear 0.5s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover.large, #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover.large > div, #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover.large img, #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover.medium, #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover.medium > div, #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover.medium img, #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover.large > span {
+    height: 100% !important;
+    max-height: 100% !important;
+    border-bottom: none !important;
+  }
+  #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover {
+    min-height: 36.25rem !important;
+    background: var(--contrast) !important;
+    position: relative !important;
+  }
+  @media (max-width: 767.98px) {
+    #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-collection-card__cover {
+      min-height: 20rem !important;
+    }
+  }
+  #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-property__title {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem !important;
+    color: var(--bg) !important;
+    opacity: 0;
+    transition: all 0.5s ease-in-out !important;
+  }
+  #page-creative-tech .notion-collection-gallery.large .notion-collection-card .notion-property__title .notion-property__title__icon-wrapper {
+    display: none !important;
+  }
+  #page-creative-tech .notion-column-list {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 6.875rem !important;
+    margin-right: 6.875rem !important;
+  }
+  #page-creative-tech .notion-column-list .notion-column .notion-image {
+    margin-bottom: 2rem !important;
+  }
+
 #page-writing .notion-text,
 #page-blog .notion-text {
   text-align: center !important;
