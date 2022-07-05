@@ -1182,6 +1182,7 @@ html {
   background-position: center center;
   height: 100% !important;
   font-family: "Satoshi Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -1626,6 +1627,7 @@ img {
 #page-index .notion-collection-gallery.large .notion-collection-card {
   box-shadow: none !important;
   border-radius: 0.5rem !important;
+  background: transparent !important;
 }
 #page-index .notion-collection-gallery.large .notion-collection-card img {
   transform: scale(1) !important;
@@ -1803,6 +1805,7 @@ img {
 #page-work .notion-collection-gallery.large .notion-collection-card {
   box-shadow: none !important;
   border-radius: 0.5rem !important;
+  background: transparent !important;
 }
 #page-work .notion-collection-gallery.large .notion-collection-card img {
   transform: scale(1) !important;
@@ -2030,6 +2033,87 @@ img {
 [id*=writing-] pre {
   background: rgba(255, 255, 255, 0.5) !important;
 }
+
+.notion-collection .notion-collection-table__wrapper table thead {
+  display: none !important;
+}
+.notion-collection .notion-collection-table__wrapper table tbody .notion-collection-table__cell.title {
+  display: none !important;
+}
+.notion-collection .notion-collection-table {
+  font-size: 1.25rem !important;
+}
+@media (max-width: 767.98px) {
+  .notion-collection .notion-collection-table {
+    font-size: 1rem !important;
+  }
+}
+.notion-collection .notion-collection-table td,
+.notion-collection .notion-collection-table th {
+  border: none !important;
+  font-size: 1.25rem !important;
+}
+.notion-collection .notion-collection-table td {
+  border: 0 !important;
+  padding: 0.25rem 0 !important;
+}
+.notion-collection .notion-collection-table th {
+  display: none !important;
+}
+.notion-collection .notion-collection-table__body .title {
+  display: none !important;
+}
+.notion-collection .notion-collection-table__cell .notion-semantic-string {
+  white-space: normal !important;
+}
+
+.notion-callout {
+  background: var(--contrast) !important;
+  color: var(--bg) !important;
+  width: 100vw !important;
+  position: relative !important;
+  left: 50% !important;
+  right: 50% !important;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  text-align: left !important;
+}
+.notion-callout.border {
+  border: none !important;
+}
+.notion-callout .notion-callout__icon .notion-icon {
+  display: none !important;
+}
+.notion-callout .notion-callout__content {
+  max-width: 1140px !important;
+  margin: 0 auto !important;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+.notion-callout .notion-callout__content .notion-collection tr {
+  margin-bottom: 0.15rem !important;
+}
+.notion-callout .notion-callout__content .notion-collection .notion-collection-table__cell.text {
+  font-size: 1.125rem !important;
+  letter-spacing: 0.025rem !important;
+  color: var(--bg) !important;
+}
+.notion-callout .notion-callout__content .notion-collection .notion-collection-table__cell.text .notion-property__text {
+  margin-bottom: 0.25rem !important;
+}
+.notion-callout .notion-callout__content .notion-collection .notion-collection-table__cell.text .color-red {
+  color: var(--bg) !important;
+  background: var(--accent) !important;
+  font-family: "Satoshi Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  padding: 0.2rem 0.5rem 0.3rem !important;
+  margin-right: 0.25rem !important;
+  border-radius: 0.25rem !important;
+}
+
 
 
 #page-ar-vr .notion-text,
@@ -2527,84 +2611,4 @@ img {
 }
 [id*=design-] pre {
   background: rgba(255, 255, 255, 0.5) !important;
-}
-
-.notion-collection .notion-collection-table__wrapper table thead {
-  display: none !important;
-}
-.notion-collection .notion-collection-table__wrapper table tbody .notion-collection-table__cell.title {
-  display: none !important;
-}
-.notion-collection .notion-collection-table {
-  font-size: 1.25rem !important;
-}
-@media (max-width: 767.98px) {
-  .notion-collection .notion-collection-table {
-    font-size: 1rem !important;
-  }
-}
-.notion-collection .notion-collection-table td,
-.notion-collection .notion-collection-table th {
-  border: none !important;
-  font-size: 1.25rem !important;
-}
-.notion-collection .notion-collection-table td {
-  border: 0 !important;
-  padding: 0.25rem 0 !important;
-}
-.notion-collection .notion-collection-table th {
-  display: none !important;
-}
-.notion-collection .notion-collection-table__body .title {
-  display: none !important;
-}
-.notion-collection .notion-collection-table__cell .notion-semantic-string {
-  white-space: normal !important;
-}
-
-.notion-callout {
-  background: var(--contrast) !important;
-  color: var(--bg) !important;
-  width: 100vw !important;
-  position: relative !important;
-  left: 50% !important;
-  right: 50% !important;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-  text-align: left !important;
-}
-.notion-callout.border {
-  border: none !important;
-}
-.notion-callout .notion-callout__icon .notion-icon {
-  display: none !important;
-}
-.notion-callout .notion-callout__content {
-  max-width: 1140px !important;
-  margin: 0 auto !important;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-.notion-callout .notion-callout__content .notion-collection tr {
-  margin-bottom: 0.15rem !important;
-}
-.notion-callout .notion-callout__content .notion-collection .notion-collection-table__cell.text {
-  font-size: 1.125rem !important;
-  letter-spacing: 0.025rem !important;
-  color: var(--bg) !important;
-}
-.notion-callout .notion-callout__content .notion-collection .notion-collection-table__cell.text .notion-property__text {
-  margin-bottom: 0.25rem !important;
-}
-.notion-callout .notion-callout__content .notion-collection .notion-collection-table__cell.text .color-red {
-  color: var(--bg) !important;
-  background: var(--accent) !important;
-  font-family: "Satoshi Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  padding: 0.2rem 0.5rem 0.3rem !important;
-  margin-right: 0.25rem !important;
-  border-radius: 0.25rem !important;
 }
